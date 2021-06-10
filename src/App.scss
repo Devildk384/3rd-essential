@@ -1,0 +1,10 @@
+/** @format */
+.app {
+  &__headerDiamond {
+    background-image: url(./Assets/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,18 @@
+/** @format */
+
+.diamond {
+  &__text {
+    position: fixed;
+    top: 13px;
+    z-index: 999;
+    width: 100%;
+    & > img {
+      position: fixed;
+      top: 69%;
+      left: 32%;
+      transition: 0.5s;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

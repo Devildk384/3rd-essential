@@ -1,0 +1,150 @@
+/** @format */
+:root {
+  --shadow: hsl(0deg 0% 87% / 87%);
+}
+.footer {
+  width: 100%;
+  box-shadow: 10px 10px 10px 10px var(--shadow);
+  &__main {
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-social {
+      flex: 0.33;
+      width: 100%;
+      margin: 20px 50px;
+      &-title {
+        & > img {
+          width: 350px;
+        }
+      }
+
+      &-logo {
+        & > ul {
+          margin: 30px 80px 30px 30px;
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+
+          & > li > a > img {
+            height: 35px;
+          }
+
+          & > li > a > img:hover {
+            transform: scale(1.5);
+            transition: 0.5s;
+          }
+        }
+      }
+
+      &-address {
+        margin: 55px;
+        text-align: center;
+
+        & > p {
+          margin-right: 35px;
+          margin-bottom: 10px;
+          font-weight: 300;
+          font-family: "Open Sans", sans-serif;
+          font-size: 15px;
+          letter-spacing: 0.28px;
+          line-height: 27px;
+        }
+        & > a {
+          margin-right: 35px;
+          text-decoration: none;
+          color: #e1e1e1;
+          &:hover {
+            color: #808080;
+          }
+        }
+      }
+    }
+    &-quickblog {
+      flex: 0.33;
+      margin-bottom: 110px;
+
+      &-title {
+        font-size: 28px;
+        color: #1c1c1c;
+        line-height: 24px;
+        font-family: "Nunito";
+        letter-spacing: 0.01em;
+        font-weight: 700;
+        margin-bottom: 76px;
+      }
+      &-blogcart {
+        width: 100%;
+
+        &-blog {
+          display: flex;
+          justify-content: space-between;
+          & > a {
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 0.01em;
+            color: #8f8f8f;
+            font-family: "Nunito";
+            line-height: 32px;
+          }
+        }
+      }
+    }
+    &-hours {
+      flex: 0.33;
+      margin: 0 50px;
+      width: 100%;
+      &-title {
+        font-size: 28px;
+        color: #1c1c1c;
+        line-height: 24px;
+        font-family: "Nunito";
+        letter-spacing: 0.01em;
+        font-weight: 700;
+        margin-bottom: 26px;
+        text-transform: uppercase;
+      }
+      &-time {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &-day {
+          margin: 10px 0;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #e1e1e1;
+          & > p {
+            color: #1c1c1c;
+            font-size: 16px;
+            font-family: "Nunito";
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            & > span {
+              font-size: 12px;
+              color: #8f8f8f;
+            }
+          }
+        }
+      }
+      &-desc {
+        margin-top: 20px;
+        font-weight: 300;
+        font-family: "Nunito";
+        font-size: 15px;
+        letter-spacing: 0.28px;
+        line-height: 27px;
+      }
+    }
+  }
+
+  &__copyright {
+    height: 150px;
+    text-align: center;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.28px;
+    line-height: 27px;
+  }
+}
