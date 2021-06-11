@@ -1,0 +1,25 @@
+/** @format */
+
+.vintagetext {
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  height: 700px;
+
+  & > h1 {
+    text-transform: uppercase;
+    color: rgba($color: #000000, $alpha: 0.8);
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 65px;
+    & > span {
+      color: #aeaeae;
+    }
+  }
+  & > a {
+    text-decoration: none;
+  }
+}

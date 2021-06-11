@@ -2,9 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import "./ImADiamondGirl.scss";
-import Carousel from "react-elastic-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import axios from "axios";
+import { ListItem } from "@material-ui/core";
 
 function ImADiamondGirl() {
   const iii =
@@ -27,6 +29,8 @@ function ImADiamondGirl() {
     });
   };
 
+  console.log(diamondGirl);
+
   const images =
     diamondGirl &&
     diamondGirl.map((image, idx) => (
@@ -34,7 +38,7 @@ function ImADiamondGirl() {
         <img
           style={{ height: "200px", width: "200px" }}
           src={image.display_url}
-          alt='ssss'
+          alt='diamondgirl'
         ></img>
       </div>
     ));
@@ -48,7 +52,9 @@ function ImADiamondGirl() {
           DIAMOND GIRLS ON INSTAGRAM #IMaDiamondGirl
         </div>
       </div>
-      <div className='imadiamondgirl__carousel'>{images}</div>
+      <div className='imadiamondgirl__carousel'>
+        <Carousel>{images}</Carousel>
+      </div>
     </div>
   );
 }

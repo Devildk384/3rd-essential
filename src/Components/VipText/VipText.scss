@@ -1,0 +1,44 @@
+/** @format */
+
+.viptext {
+  position: relative;
+  top: 30%;
+  margin: 0 20%;
+  height: auto;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  z-index: 5;
+  border-radius: 10px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+    & > h2 {
+      text-align: center;
+      z-index: 7;
+      text-transform: uppercase;
+      color: #252525;
+      font-family: "Nunito";
+      font-weight: 300;
+      font-size: 35px;
+      & > span {
+        color: #252525;
+        font-weight: 700;
+        font-size: 45px;
+      }
+    }
+
+    & > p {
+      font-family: "Nunito";
+      font-size: 18px;
+      line-height: 2;
+      margin: 10px 0;
+    }
+    & > a {
+      text-decoration: none;
+    }
+  }
+}
